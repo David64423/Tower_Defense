@@ -3,28 +3,42 @@ let derecha = document.getElementById("derecha");
 let distanciaX=0;
 let distanciaY=0;
 
-derecha.addEventListener('click',function(){ mainCaminar(personaje2)});
+derecha.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",sumarX)});
 
-
-function mainCaminar(a){
-    caminarDerecha(personaje2);
-    setTimeout(caminarDerecha,101,personaje2);
-    setTimeout(caminarDerecha,204,personaje2);
+//Funcion General
+function mainCaminar(a,b,c,fnc){
+    caminarDerecha(a,b,c,fnc);
+    setTimeout(caminarDerecha,101,a,b,c,fnc);
+    setTimeout(caminarDerecha,204,a,b,c,fnc);
 };
 
 
 
-function caminarDerecha(a){
+function caminarDerecha(a,b,c,fnc){
 
-    cambiar(a, "img/personajes/pers2_2.png");
-    distanciaX= distanciaX +5;
+    cambiar(a, "img/personajes/"+c);
+    fnc();
+    a.style.transition="0.09s"
     a.style.transform="translate("+distanciaX+"px,"+distanciaY+"px)";
     
-    setTimeout(cambiar,100,personaje2,"img/personajes/pers2_1.png");
+    setTimeout(cambiar,100,a,"img/personajes/"+b);
     
 
 
 };
+//Fin de la funcon general
+
+
+function sumarX(){
+    distanciaX= distanciaX +5;
+};
+
+
+/*
+function sumarY(){}
+distanciaY = distanciaY-5;}
+*/
+
 
 
 

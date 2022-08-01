@@ -190,10 +190,28 @@ color: var(--c1);
     border: var(--bp);
     height: 56%;
     display: flex;
-    align-items: center;
+    flex-direction:column;
+    justify-content: space-between;
 }
 
 #pers2{
-    height: 30%;
-    width: 10%;
+    height: 100%;
+    width: 30%;
+}
+#paraPonerDatos{
+    width: 100%;
+    height: 21%;
+    border: var(--bp);
+}
+
+#contenedorPersonajesArriba{
+border: var(--bp);
+height: 30%;
+width: 30%;
+}
+
+#paraPosicionarPersonajesAbajo{
+    border: var(--bp);
+height: 30%;
+width: 30%;
 }

@@ -1,0 +1,199 @@
+:root{
+    /*Paleta de colores 
+    p:Color Primario
+    s1:Segundo color mas fuerte
+    s2:Tercer color mas fuerte
+    s3:cuarto color mas fuerte
+    s4:quinto color mas fuerte
+    */
+--p: #4b1c71;
+--s1: #7f4ca5;
+--s2: #b57edc;
+--s3: #dbb6ee;
+--s4: #fff0ff;
+--c3:black; /*Es el color negro */
+--c2:white; /*Es el color blanco, principalmente usado para las fuentes de los botones */
+--c1:red; /*Es el rojo de fuente usado para algunos botones en el hover */
+--bp: 1px solid black; /*Es un borde que generalmente uso para probar como estan posicionados ciertos elementos */
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#contenedorCompleto{
+width: 100vw;
+height: 100vh;
+background-color: var(--s2);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#gameBoy{
+    width:50vw;
+    height:98vh;
+    background-color: var(--s1);
+}
+
+
+#parteArriba{
+border: var(--bp);
+height: 70%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#parteAbajo{
+    border: var(--bp);
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pantalla{
+height: 80%;
+width: 80%;
+background-color: var(--s3);
+border: var(--bp);
+border-radius: 10px;
+background-image: url("../img/mapas/mapa1.jpg");
+background-size: 100% 104%;
+background-repeat: no-repeat;
+}
+
+
+.botones{ /*Estos son los contenedores de los botones*/
+    height: 100%;
+    width: 100%;
+    /*
+    border: var(--bp); */
+    
+}
+
+.arribaAbajo{  /*Flechas Arriba y Abajo*/
+    height:8vh ;
+    width:2vw ;
+    background-color: var(--c3);
+    color: var(--c2);
+}
+
+.arribaAbajo:hover{  /*Flechas Arriba y Abajo*/
+    color: var(--c1);}
+
+.izquierdaDerecha{ /*Flechas izquierda y derecha*/
+    height: 2vw;
+    width: 4vw ;
+    position: relative;
+    top:8vh;
+    color: var(--c2);
+    background-color: var(--c3);
+}
+
+.izquierdaDerecha:hover{ /*Flechas izquierda y derecha*/
+    color: var(--c1);}
+
+#arriba{/*Flecha arriba*/
+position: relative;
+top: 4.1%;
+left: 31.7%;
+}
+
+#abajo{ /*Flecha abajo*/
+    position: relative;
+    top: 52%;
+    right: 33.4%;
+
+}
+
+#izquierda{ /*Flecha izquierda*/
+    position: relative;
+    right: 1vw;
+
+}
+
+#derecha{ /*Flecha derecha*/
+    position: relative;
+    left: 0.7vw;
+}
+
+#cuadradoCentro{ /*Esto es un cuadrado en el centro de las flechas para que no quede un espacio*/
+    width: 2vw;
+    height: 6vh;
+    background-color: var(--c3);
+    position: relative;
+    top: 1.3vh;
+    left: 5.3vw;
+}
+
+.ayb{ /*Botom A y Botom B*/
+    height:30% ;
+    width: 30%;
+    border-radius: 25px;
+    color: var(--c2);
+    background-color: var(--c3) ;
+    position: relative;
+    top: 20%;
+    left: 30%;
+}
+
+
+.ayb:hover{ /*Botom A y Botom B*/
+
+    color: var(--c1);
+
+}
+
+
+#botomA{
+    position: relative;
+    top: 40%;
+}
+
+.sys{
+    height: 15% ;
+    width:35% ;
+    margin: 3%;
+    transform: rotate(-30deg);
+    color: var(--c2);
+    background-color: var(--c3);
+}
+
+.sys:hover{
+    
+color: var(--c1);
+}
+
+#contenedorSYS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapa{
+    height:100%;
+    width:100% ;
+    
+}
+
+#prueba{
+    height: 20%;
+    width: 20%;
+}
+
+#paraPosicionarPersonaje{
+    border: var(--bp);
+    height: 56%;
+    display: flex;
+    align-items: center;
+}
+
+#pers2{
+    height: 30%;
+    width: 10%;
+}

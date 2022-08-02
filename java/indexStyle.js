@@ -39,6 +39,12 @@ function sumarX(){
     distanciaX= distanciaX +distanciaM;
 };
 
+function sumarY(){
+distanciaY = distanciaY -5;
+};
+
+
+
 
 /*
 function sumarY(){}

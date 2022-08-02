@@ -5,6 +5,7 @@ let distanciaY=0;
 let distanciaM=5;
 
 derecha.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",sumarX)});
+arriba.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",sumarY)});
 
 //Funcion General
 function mainCaminar(a,b,c,fnc){
@@ -40,7 +41,7 @@ function sumarX(){
 };
 
 function sumarY(){
-distanciaY = distanciaY -5;
+distanciaY = distanciaY - distanciaM;
 };
 
 

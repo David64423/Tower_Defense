@@ -14,7 +14,9 @@
 --c3:black; /*Es el color negro */
 --c2:white; /*Es el color blanco, principalmente usado para las fuentes de los botones */
 --c1:red; /*Es el rojo de fuente usado para algunos botones en el hover */
---bp: 1px solid black; /*Es un borde que generalmente uso para probar como estan posicionados ciertos elementos */
+--bp: none; /*Es un borde que generalmente uso para probar como estan posicionados ciertos elementos */
+--bf:1px solid black; /*Es el borde de los elementos que se quedaran con dicho borde en el final del proyecto, es 
+decir, no son bordes de prueba como los --bp */
 }
 
 
@@ -34,13 +36,13 @@ align-items: center;
 
 #gameBoy{
     width:50vw;
-    height:98vh;
+    height:98%;
     background-color: var(--s1);
 }
 
 
 #parteArriba{
-border: var(--bp);
+border: var(--bf);
 height: 70%;
 width: 100%;
 display: flex;
@@ -49,7 +51,7 @@ align-items: center;
 }
 
 #parteAbajo{
-    border: var(--bp);
+    border: var(--bf);
     height: 30%;
     width: 100%;
     display: flex;
@@ -60,11 +62,12 @@ align-items: center;
 height: 80%;
 width: 80%;
 background-color: var(--s3);
-border: var(--bp);
+border: var(--bf);
 border-radius: 10px;
 background-image: url("../img/mapas/mapa1.jpg");
 background-size: 100% 104%;
 background-repeat: no-repeat;
+overflow: hidden;
 }
 
 
@@ -77,8 +80,8 @@ background-repeat: no-repeat;
 }
 
 .arribaAbajo{  /*Flechas Arriba y Abajo*/
-    height:8vh ;
-    width:2vw ;
+    width: 4vw;
+    height: 8vh;
     background-color: var(--c3);
     color: var(--c2);
 }
@@ -87,53 +90,29 @@ background-repeat: no-repeat;
     color: var(--c1);}
 
 .izquierdaDerecha{ /*Flechas izquierda y derecha*/
-    height: 2vw;
-    width: 4vw ;
-    position: relative;
-    top:8vh;
+
     color: var(--c2);
     background-color: var(--c3);
+    width:6vw ;
+    height: 100%;
 }
 
 .izquierdaDerecha:hover{ /*Flechas izquierda y derecha*/
     color: var(--c1);}
 
-#arriba{/*Flecha arriba*/
-position: relative;
-top: 4.1%;
-left: 31.7%;
-}
 
-#abajo{ /*Flecha abajo*/
-    position: relative;
-    top: 52%;
-    right: 33.4%;
-
-}
-
-#izquierda{ /*Flecha izquierda*/
-    position: relative;
-    right: 1vw;
-
-}
-
-#derecha{ /*Flecha derecha*/
-    position: relative;
-    left: 0.7vw;
-}
 
 #cuadradoCentro{ /*Esto es un cuadrado en el centro de las flechas para que no quede un espacio*/
     width: 2vw;
     height: 6vh;
     background-color: var(--c3);
-    position: relative;
-    top: 1.3vh;
-    left: 5.3vw;
+    border: var(--bf);
+   
 }
 
 .ayb{ /*Botom A y Botom B*/
-    height:30% ;
-    width: 30%;
+    height:8vh ;
+    width: 5vw;
     border-radius: 25px;
     color: var(--c2);
     background-color: var(--c3) ;
@@ -156,8 +135,8 @@ left: 31.7%;
 }
 
 .sys{
-    height: 15% ;
-    width:35% ;
+    height: 6vh ;
+    width:8vw ;
     margin: 3%;
     transform: rotate(-30deg);
     color: var(--c2);
@@ -214,4 +193,49 @@ width: 30%;
     border: var(--bp);
 height: 30%;
 width: 30%;
+}
+
+#contenedorA{
+    width: 100%;
+    height: 30%;
+    border: var(--bp);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#contenedorCentral{
+    display: flex;
+
+    border: var(--bp);
+    height: 20%;
+    width: 100%;
+    justify-content:space-between;
+    
+}
+
+#contenedorI{
+    width: 44%;
+    height: 100%;
+    border: var(--bp);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+#contenedorAb{
+    border: var(--bp);
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+
+}
+#contenedorD{
+    width: 43%;
+    height: 100%;
+    border: var(--bp);
+    display: flex;
+    align-items: center;
 }

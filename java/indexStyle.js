@@ -1,10 +1,11 @@
 let personaje2 = document.getElementById("pers2");
 let derecha = document.getElementById("derecha");
 let abajo = document.getElementById("abajo");
+let izquierda = document.getElementById("izquierda");
 let distanciaX=0;
-let distanciaY=0;
+let distanciaY=0;    
 let distanciaM=5;
-
+izquierda.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",restarX)});
 derecha.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",sumarX)});
 arriba.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",sumarY)});
 abajo.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",restarY)});
@@ -16,7 +17,7 @@ function mainCaminar(a,b,c,fnc){
 
     while(i<3){
     setTimeout(caminar,tiempo,a,b,c,fnc);
-    tiempo= tiempo + 110;
+    tiempo= tiempo + 200;
     i++;
     };
 };
@@ -37,6 +38,9 @@ function caminar(a,b,c,fnc){
 };
 //Fin de la funcon general
 
+function restarX(){
+    distanciaX= distanciaX -distanciaM;
+};
 
 function sumarX(){
     distanciaX= distanciaX +distanciaM;

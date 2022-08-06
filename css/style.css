@@ -14,7 +14,7 @@
 --c3:black; /*Es el color negro */
 --c2:white; /*Es el color blanco, principalmente usado para las fuentes de los botones */
 --c1:red; /*Es el rojo de fuente usado para algunos botones en el hover */
---bp: none; /*Es un borde que generalmente uso para probar como estan posicionados ciertos elementos */
+--bp: 1px solid black; /*Es un borde que generalmente uso para probar como estan posicionados ciertos elementos */
 --bf:1px solid black; /*Es el borde de los elementos que se quedaran con dicho borde en el final del proyecto, es 
 decir, no son bordes de prueba como los --bp */
 }

@@ -4,7 +4,7 @@ let abajo = document.getElementById("abajo");
 let izquierda = document.getElementById("izquierda");
 let distanciaX=0;
 let distanciaY=0;    
-let distanciaM=5;
+let distanciaM=0.7;
 izquierda.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",restarX)});
 derecha.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",sumarX)});
 arriba.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",sumarY)});
@@ -29,7 +29,7 @@ function caminar(a,b,c,fnc){
     cambiar(a, "img/personajes/"+c);
     fnc();
     a.style.transition="0.09s"
-    a.style.transform="translate("+distanciaX+"px,"+distanciaY+"px)";
+    a.style.transform="translate("+distanciaX+"vw,"+distanciaY+"vh)";
     
     setTimeout(cambiar,100,a,"img/personajes/"+b);
     

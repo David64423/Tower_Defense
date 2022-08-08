@@ -2,6 +2,8 @@ let personaje2 = document.getElementById("pers2");
 let derecha = document.getElementById("derecha");
 let abajo = document.getElementById("abajo");
 let izquierda = document.getElementById("izquierda");
+let x = document.getElementById("x");
+let y = document.getElementById("y");
 let distanciaX=0;
 let distanciaY=0;    
 let distanciaM=0.7;
@@ -10,16 +12,34 @@ derecha.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png
 arriba.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",sumarY)});
 abajo.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",restarY)});
 
+
+
+//Funcion para actualizar coordenadas
+const cambiarXY = () => {
+x.innerText = distanciaX;
+y.innerText = distanciaY;
+};
+
+cambiarXY();
+
+
 //Funcion General
 function mainCaminar(a,b,c,fnc){
     let tiempo=0;
     let i=0;
 
     while(i<3){
-    setTimeout(caminar,tiempo,a,b,c,fnc);
-    tiempo= tiempo + 200;
-    i++;
+        if ( (distanciaY<=(-13) && fnc===sumarY) ){
+            
+        }
+        else{
+            setTimeout(caminar,tiempo,a,b,c,fnc);
+            tiempo= tiempo + 200;
+            
+        }
+        i++;
     };
+    
 };
 
 
@@ -33,7 +53,7 @@ function caminar(a,b,c,fnc){
     
     setTimeout(cambiar,100,a,"img/personajes/"+b);
     
-
+    cambiarXY();
 
 };
 //Fin de la funcon general
@@ -68,4 +88,6 @@ function cambiar(a,b){
     a.src=b;
     console.log("Este es el mensaje")
 };
+
+
 

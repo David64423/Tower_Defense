@@ -29,7 +29,7 @@ function mainCaminar(a,b,c,fnc){
     let i=0;
 
     while(i<3){
-        if ( (distanciaY<=(-13) && fnc===sumarY) ){
+        if ( (distanciaY<=(-13) && fnc===sumarY) || (distanciaY>=(32) && fnc===restarY) ){
             
         }
         else{

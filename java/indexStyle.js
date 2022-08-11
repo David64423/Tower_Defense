@@ -29,7 +29,7 @@ function mainCaminar(a,b,c,fnc){
     let i=0;
 
     while(i<3){
-        if ( (distanciaY<=(-13) && fnc===sumarY) || (distanciaY>=(32) && fnc===restarY) ){
+        if ((distanciaX<=(2) && fnc===restarX) || (distanciaX>=(34) && fnc===sumarX)|| (distanciaY<=(-13) && fnc===sumarY) || (distanciaY>=(32) && fnc===restarY) ){
             
         }
         else{
@@ -39,6 +39,8 @@ function mainCaminar(a,b,c,fnc){
         }
         i++;
     };
+    
+
     
 };
 

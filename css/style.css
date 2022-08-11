@@ -17,6 +17,11 @@
 --bp: 1px solid black; /*Es un borde que generalmente uso para probar como estan posicionados ciertos elementos */
 --bf:1px solid black; /*Es el borde de los elementos que se quedaran con dicho borde en el final del proyecto, es 
 decir, no son bordes de prueba como los --bp */
+--cbp1: #38726c;
+--cbp2: #563f1b;
+--cbp3: #d34e24;
+--cbp4: #f28123;
+--cbp5: #f7f052;
 }
 
 
@@ -167,20 +172,23 @@ color: var(--c1);
 
 #paraPosicionarPersonaje{
     border: var(--bp);
-    height: 56%;
+    border-color: var(--cbp);
+    height: 95%;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
+    width: 50%;
 }
 
 #pers2{
-    height: 100%;
-    width: 30%;
+    height: 95%;
+    width: 75%;
 }
 #paraPonerDatos{
     width: 100%;
     height: 21%;
     border: var(--bp);
+    border-color: var(--cbp);
 }
 
 #contenedorPersonajesArriba{
@@ -246,4 +254,25 @@ width: 30%;
 
 .coordenadas{
     display: inline;
+}
+
+
+#paraPosicionarEdificios{
+    border: var(--bp);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#characters{
+    display: flex;
+    height: 60%;
+    border: var(--bp);
+}
+
+.torres{
+    height: 100%;
+    border: var(--bp);
+    width: 30%;
 }

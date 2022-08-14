@@ -1,0 +1,19 @@
+ul{
+
+    width: 80%;
+    color: white;
+    height: 10vh;
+    background-color: red;
+    border: 4px dashed red;
+
+
+}
+
+body{
+    background-color: blue;
+}
+
+.li{
+    background-color: red;
+    color: red;
+}

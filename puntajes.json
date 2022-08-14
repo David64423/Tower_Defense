@@ -1,0 +1,34 @@
+[{
+    "nombre" :"Rober",
+    "puntaje":2000
+},
+{
+    "nombre":"David",
+    "puntaje":4500
+},
+
+{
+    "nombre":"Franco",
+    "puntaje":3000
+},
+
+{
+    "nombre":"Mica",
+    "puntaje":800
+},
+
+{
+    "nombre":"Birda",
+    "puntaje":1240
+},
+
+{
+    "nombre":"Komanche",
+    "puntaje":2544
+},
+
+{
+    "nombre":"",
+    "puntaje":1267
+}
+]

@@ -276,3 +276,6 @@ width: 30%;
     border: var(--bp);
     width: 30%;
 }
+#torreprincipal{ height: 100%;
+    border: var(--bp);
+    width: 110%;}

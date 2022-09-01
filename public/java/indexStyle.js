@@ -12,9 +12,9 @@ let reset = document.getElementById('reset');
 izquierda.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",restarX)});
 start.addEventListener('click',function(){ automatizar(personaje2,"pers2_1.png","pers2_2.png",sumarX)});
 arriba.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",sumarY)});
-abajo.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",restarY)});
-botomA.addEventListener('click',function(){ataque(personaje2,"pers2_2.png")});
+abajo.addEventListener('click',function(){ mainCaminar(personaje2,"","pers2_2.png",restarY)});
 
+botomA.addEventListener('click',function(){ataque(personaje2,"pers2_1.png","espada.gif")});
 
 
 
@@ -66,7 +66,7 @@ function caminar(a,b,c,fnc){
     a.style.transition="0.09s"
     a.style.transform="translate("+distanciaX+"vw,"+distanciaY+"vh)";
     
-    setTimeout(cambiar,100,a,"img/personajes/"+b);
+    
     
     cambiarXY();
 
@@ -454,15 +454,13 @@ i43++;
 
 //ataque boton A
 
-function ataque(a,b,c,fnc){
+function ataque(a,b,c){
 
-    cambiar(a,c);
-    fnc();
-    a.style.transition="0.09s"
-    a.style.transform="translate("+distanciaX+"vw,"+distanciaY+"vh)";
+
+   cambiar(a, "img/personajes/"+c);
+
     
-    setTimeout(cambiar,100,a,b);
-    
-    cambiarXY();
+   setTimeout(cambiar,3000,a,"img/personajes/"+b);
+ 
 
 };

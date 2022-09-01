@@ -18,6 +18,7 @@ botomA.addEventListener('click',function(){ataque(personaje2,"pers2_2.png")});
 
 
 
+
 //Funcion para actualizar coordenadas
 const cambiarXY = () => {
 x.innerText = distanciaX;
@@ -451,14 +452,16 @@ i43++;
 */
 };
 
+//ataque boton A
+
 function ataque(a,b,c,fnc){
 
-    cambiar(a, "img/gif/"+c);
+    cambiar(a,c);
     fnc();
     a.style.transition="0.09s"
     a.style.transform="translate("+distanciaX+"vw,"+distanciaY+"vh)";
     
-    setTimeout(cambiar,100,a,"img/gif/"+b);
+    setTimeout(cambiar,100,a,b);
     
     cambiarXY();
 

@@ -13,6 +13,7 @@ izquierda.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.p
 start.addEventListener('click',function(){ automatizar(personaje2,"pers2_1.png","pers2_2.png",sumarX)});
 arriba.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",sumarY)});
 abajo.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",restarY)});
+botomA.addEventListener('click',function(){ataque(personaje2,"pers2_2.png")});
 
 
 
@@ -451,4 +452,17 @@ i43++;
 */
 };
 
+//ataque boton A
 
+function ataque(a,b,c,fnc){
+
+    cambiar(a,c);
+    fnc();
+    a.style.transition="0.09s"
+    a.style.transform="translate("+distanciaX+"vw,"+distanciaY+"vh)";
+    
+    setTimeout(cambiar,100,a,b);
+    
+    cambiarXY();
+
+};

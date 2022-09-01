@@ -11,7 +11,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx node index.js"
+<<<<<<< HEAD
+=======
+    "start": "npx nodemon index.js"
+>>>>>>> refs/remotes/origin/master
   },
   "repository": {
     "type": "git",

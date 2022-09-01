@@ -8,11 +8,11 @@ let distanciaX=0;
 let distanciaY=0;    
 let distanciaM=0.7;
 let start = document.getElementById('start');
-let reset = document.getElementById('reset');
+//let reset = document.getElementById('reset');
 izquierda.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",restarX)});
 start.addEventListener('click',function(){ automatizar(personaje2,"pers2_1.png","pers2_2.png",sumarX)});
 arriba.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",sumarY)});
-abajo.addEventListener('click',function(){ mainCaminar(personaje2,"","pers2_2.png",restarY)});
+abajo.addEventListener('click',function(){ mainCaminar(personaje2,"pers2_1.png","pers2_2.png",restarY)});
 
 botomA.addEventListener('click',function(){ataque(personaje2,"pers2_1.png","espada.gif")});
 
@@ -26,7 +26,7 @@ y.innerText = distanciaY;
 };
 
 cambiarXY();
-reset.addEventListener('click',resetear());
+//reset.addEventListener('click',resetear());
 function resetear(){
     distanciaX=0;
     distanciaY=0;
